@@ -7,7 +7,12 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "nuxt generate",
+    "lint": "eslint --ext .js,.vue .",
+    "lint:fix": "eslint --ext .js,.vue . --fix",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@pinia/nuxt": "^0.11.0",
@@ -19,5 +24,15 @@
     "vue": "^3.5.13",
     "vue-flip": "^3.0.2",
     "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.31.0",
+    "@typescript-eslint/parser": "^8.31.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.2.6",
+    "eslint-plugin-vue": "^10.0.0",
+    "gh-pages": "^6.3.0",
+    "prettier": "^3.5.3"
   }
 }

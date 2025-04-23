@@ -33,11 +33,6 @@ button {
 
 /* Адаптивность */
 @media (max-width: 768px) {
-  .cards-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  
   .card {
     margin-bottom: 10px;
   }
